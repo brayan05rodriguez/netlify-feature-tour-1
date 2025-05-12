@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Confirmación de interés - CUN</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(to bottom right, #004488, #00bfff);
+      margin: 0;
+      padding: 0;
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+    .card {
+      background-color: #ffffff;
+      color: #333;
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+      width: 100%;
+      max-width: 400px;
+      text-align: center;
+    }
+    .card h2 {
+      color: #004488;
+      margin-bottom: 10px;
+    }
+    .card p {
+      font-size: 16px;
+      margin-bottom: 25px;
+    }
+    .btn {
+      display: block;
+      width: 100%;
+      padding: 12px;
+      border: none;
+      border-radius: 8px;
+      background-color: #004488;
+      color: white;
+      font-size: 16px;
+      font-weight: bold;
+      margin-bottom: 15px;
+      cursor: pointer;
+      transition: background 0.3s;
+      text-decoration: none;
+    }
+    .btn:hover {
+      background-color: #0066aa;
+    }
+    .info-list {
+      text-align: left;
+      margin-top: 20px;
+      font-size: 14px;
+    }
+    .info-list a {
+      display: block;
+      color: #004488;
+      margin-bottom: 8px;
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h2>🎓 ¿Estás interesado en continuar tu matrícula?</h2>
+    <p>Hola, soy <strong>Brayan Rodríguez</strong> del área de matrículas de la <strong>CUN</strong>. Aprovecha becas de hasta el <strong>65%</strong> y matrículas desde <strong>$88.000</strong>.</p>
+    <a class="btn" href="https://wa.link/r9t0rx" target="_blank">✅ Sí, estoy interesado</a>
+    <button class="btn" style="background-color: #999" onclick="alert('Gracias por responder. Te deseamos lo mejor.')">❌ No, gracias</button>
+    <button class="btn" style="background-color: #ffaa00" onclick="document.getElementById('info').style.display = 'block'">🤔 Necesito más información</button>
+    <div id="info" class="info-list" style="display: none;">
+      <strong>Programas disponibles:</strong>
+      <a href="https://cun.edu.co/programas/ingenieria-de-sistemas" target="_blank">Ingeniería de Sistemas</a>
+      <a href="https://cun.edu.co/programas/ingenieria-industrial" target="_blank">Ingeniería Industrial</a>
+      <a href="https://cun.edu.co/programas/diseno-grafico" target="_blank">Diseño Gráfico</a>
+      <a href="https://cun.edu.co/programas/derecho" target="_blank">Derecho</a>
+      <a href="https://cun.edu.co/programas/administracion-de-la-seguridad-social" target="_blank">Administración de la Seguridad Social</a>
+      <a href="https://cun.edu.co/programas/contaduria-publica" target="_blank">Contaduría Pública</a>
+      <a href="https://cun.edu.co/programas/administracion-publica" target="_blank">Administración Pública</a>
+      <a href="https://cun.edu.co/programas/comunicacion-social" target="_blank">Comunicación Social</a>
+      <a href="https://cun.edu.co/programas/direccion-y-produccion-de-medios-audiovisuales" target="_blank">Dirección y Producción de Medios Audiovisuales</a>
+      <a href="https://cun.edu.co/programas/administracion-de-empresas" target="_blank">Administración de Empresas</a>
+      <a href="https://cun.edu.co/programas/publicidad-y-mercadeo" target="_blank">Publicidad y Mercadeo</a>
+    </div>
+  </div>
+</body>
+</html>
